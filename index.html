@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ExpressiveJS by Venogram</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Expressive is a developer tool that tracks and visualizes server routes in Express applications.
+  Useful for debugging and teaching alike, Expressive enables developers to send client requests to their Express server, and then render a dynamic and comprehensive visualization of server state throughout the lifespan of each request -- all from the command line." />
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!--sidebar-->
+    <aside id="sidebar-wrapper">
+      <img id='mainlogo' src="./images/whiteEXPRLogo@2x.png">
+      <ul class="sidebar">
+        <li id="homeButton">
+          <a href="#home">Home</a>
+        </li>
+        <li id="sampleButton">
+          <a href="#sample">Sample</a>
+        </li>
+        <li id="quickstartButton">
+          <a href="#quickstart">Quickstart</a>
+        </li>
+        <li id="contactButton">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!--content-->
+    <section id="page-wrapper">
+      <article id="home" class="content">
+        <div>This is home</div>
+        <div id="homeParagraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt rhoncus urna eget eleifend. Integer dapibus condimentum auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec rutrum vulputate sem non sagittis. Sed sed sapien posuere, imperdiet tortor nec, cursus mi. Suspendisse ac sapien sit amet lectus sollicitudin dapibus. Donec ut libero varius, tincidunt arcu sed, suscipit ex. Mauris commodo hendrerit eros, eget egestas lorem consectetur semper. Maecenas sapien dolor, viverra in quam eu, pulvinar facilisis mauris. Fusce nibh enim, porta eget venenatis mattis, tempor ac mi. Nam volutpat diam nunc, id consequat enim cursus sed. Fusce vel augue blandit, lacinia velit sit amet, egestas nisi.
+
+Sed mollis ultricies leo rutrum mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies dui vel massa feugiat tincidunt. Nulla molestie ex quis metus commodo, ac accumsan libero tristique. Suspendisse pharetra lectus pharetra vulputate ultricies. Donec quis placerat lacus. Phasellus at turpis porttitor, hendrerit sem vitae, volutpat sapien. Aliquam varius libero sit amet est hendrerit, eget consectetur orci finibus. Praesent ut neque malesuada, dapibus est nec, vulputate risus. Nullam laoreet ex aliquam lacus aliquam, sed rhoncus orci tempus. Phasellus a pharetra ex. Morbi pharetra lorem ut venenatis eleifend.
+        </div>
+        <button id='homeArrow' aria-label="next tab">
+          <span class="downButton"><img src="./images/arrow-down.png"></span>
+        </button>
+      </article>
+
+      <article id="sample" class="content">
+        <div id="sampleImageDiv">
+        <img id="sampleImage" src="http://static.boredpanda.com/blog/wp-content/uploads/2015/07/panda-daycare-nursery-chengdu-research-base-breeding-8.jpg" alt="PANDAS!!!">
+        </div>
+        <button id='sampleArrow' aria-label="next tab">
+          <span class="downButton"><img src="./images/arrow-down.png"></span>
+        </button>
+      </article>
+
+      <article id="quickstart" class="content">
+        <h1>Quick Start</h1>
+        <div class="text-left">
+          <h3>Install: </h3>
+          loren ipsum??? more text to be in here soon...tm
+        </div>
+        <div class="text-left">
+          <h3>Server Files: </h3>
+          loren ipsum??? more text to be in here soon...tm
+        </div>
+        <div class="text-left">
+          <h3>Command Lines: </h3>
+          <span class="commands">$ xpr-test:</span> Test your server routes. Sends http requests to your Express server as specified in your expressive.config.js file. This will create an expressive.json file in which information on request and response states is stored. If the file already exists from previous tests, it will be overwritten. <br>
+          <span class="commands">$ xpr-build:</span> Bundle data from the expressive.json file created using the xpr-test command for use in rendering a visualization of your server routes. <br>
+          <span class="commands">$ xpr-display:</span> Render a visualization of your server routes based on the data bundled from the xpr-test command. <br>
+          <span class="commands">$ xpr:</span> Test your server routes, then bundle the collected data, and then render a visualization. Equivalent to running xpr-test followed by xpr-build followed by xpr-display.
+        </div>
+        <button id='quickstartArrow' aria-label="next tab">
+          <span class="downButton"><img src="./images/arrow-down.png"></span>
+        </button>
+      </article>
+
+      <article id="contact" class="content">
+        Meet The Team Behind ExpressiveJS!
+        <div class="teamGram">
+          <div class="members">Glenn Alexander</div>
+          <div class="members">Ryan Fowlkes Smith</div>
+          <div class="members">Kangseon Cho</div>
+          <div class="members">Mary Snow</div>
+        </div>
+      </article>
+    </section>
+
+  </div>
+</body>
+<script src="./main.js"></script>
+
+</html>

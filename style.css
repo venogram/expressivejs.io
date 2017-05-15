@@ -1,0 +1,95 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #383838;
+  color: white;
+}
+#wrapper {
+  display: flex;
+}
+
+.sidebar {
+  padding: 0;
+  /*padding-top: 20%;*/
+  height: 100%;
+}
+.sidebar li {
+  /*spacing between items in the side bar*/
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font-size: 26px;
+  text-align: center;
+}
+.sidebar li a {
+  text-decoration: none;
+  /*can adjust font of sidebar items here*/
+  color: white;
+  width: 100%;
+}
+
+#sidebar-wrapper {
+  background-color: #2B2D33;
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+}
+#page-wrapper {
+  /* if changing this, change #sidebar-wrapper's width by same amount */
+  padding-left: 20vw;
+  width: 80vw;
+}
+#homeParagraph {
+  /*give spacing around the wall of texts in home div*/
+  padding: 2%;
+}
+
+#mainlogo {
+  width: 80%;
+  height: 15%;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+
+.content {
+  height: 100vh;
+  width: 80vw;
+}
+
+#sampleImageDiv {
+  /*change vertical positioning of the sample picture*/
+  padding-top: 5%;
+  /*change horizontal positioning of the sample picture*/
+  padding-left: 20%;
+}
+
+.commands {
+  font-size: 18px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+.downButton img{
+  height: 90px;
+  width: 90px;
+}
+
+/*needed to move buttons to bottom*/
+#quickstart, #sample, #home {
+  position: relative;
+}
+#quickstartArrow, #sampleArrow, #homeArrow  {
+  position: absolute;
+  bottom: 1%;
+  right: 45%;
+}
+
+/*contact*/
+.teamGram {
+  display: flex;
+}
+.members {
+  padding-left: 10%;
+}
