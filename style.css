@@ -133,10 +133,14 @@ button:hover {
   font-size: 26px;
   text-align: center;
 }
+#contact span {
+  font-size: 40px;
+}
 .teamGram {
   display: flex;
 }
 .members {
+  padding-top: 15vh;
   padding-left: 4%;
   padding-right: 4%;
   font-size: 20px;
@@ -147,4 +151,7 @@ button:hover {
 .members img {
   width: 75%;
   height: 60%;
+}
+.members a {
+  color: white;
 }
