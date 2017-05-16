@@ -113,7 +113,7 @@ button:hover {
 
 /*Quickstart*/
 #quickstart h1{
-  /*padding-top: 7vh;*/
+  padding-top: 7vh;
   text-align: center;
   font-size: 40px;
 }
@@ -149,7 +149,7 @@ button:hover {
   font-size: 16px;
 }
 .members img {
-  width: 75%;
+  width: 80%;
   height: 60%;
 }
 .members a {
