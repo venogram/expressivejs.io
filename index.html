@@ -36,11 +36,10 @@
     <!--content-->
     <section id="page-wrapper">
       <article id="home" class="content">
-        <div>This is home</div>
+        <div class="title"><i>Expressive<span id="js">JS</span></i></div>
         <div id="homeParagraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt rhoncus urna eget eleifend. Integer dapibus condimentum auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec rutrum vulputate sem non sagittis. Sed sed sapien posuere, imperdiet tortor nec, cursus mi. Suspendisse ac sapien sit amet lectus sollicitudin dapibus. Donec ut libero varius, tincidunt arcu sed, suscipit ex. Mauris commodo hendrerit eros, eget egestas lorem consectetur semper. Maecenas sapien dolor, viverra in quam eu, pulvinar facilisis mauris. Fusce nibh enim, porta eget venenatis mattis, tempor ac mi. Nam volutpat diam nunc, id consequat enim cursus sed. Fusce vel augue blandit, lacinia velit sit amet, egestas nisi.
-
-Sed mollis ultricies leo rutrum mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies dui vel massa feugiat tincidunt. Nulla molestie ex quis metus commodo, ac accumsan libero tristique. Suspendisse pharetra lectus pharetra vulputate ultricies. Donec quis placerat lacus. Phasellus at turpis porttitor, hendrerit sem vitae, volutpat sapien. Aliquam varius libero sit amet est hendrerit, eget consectetur orci finibus. Praesent ut neque malesuada, dapibus est nec, vulputate risus. Nullam laoreet ex aliquam lacus aliquam, sed rhoncus orci tempus. Phasellus a pharetra ex. Morbi pharetra lorem ut venenatis eleifend.
+          Expressive is a developer tool that tracks and visualizes server routes in Express applications.
+          Useful for debugging and teaching alike, Expressive enables developers to send client requests to their Express server, and then render a dynamic and comprehensive visualization of server state throughout the lifespan of each request <b>-- all from the command line</b>.
         </div>
         <button id='homeArrow' aria-label="next tab">
           <span class="downButton"><img src="./images/arrow-down.png"></span>
@@ -58,20 +57,27 @@ Sed mollis ultricies leo rutrum mollis. Pellentesque habitant morbi tristique se
 
       <article id="quickstart" class="content">
         <h1>Quick Start</h1>
-        <div class="text-left">
+        <div class="install">
           <h3>Install: </h3>
-          loren ipsum??? more text to be in here soon...tm
+          $ npm install expressivejs --save-dev <br>
+          <a href="https://www.npmjs.com/package/expressivejs">NPM website</a> <br>
+          <a href="https://github.com/venogram/ExpressiveJS">Github</a>
         </div>
-        <div class="text-left">
+        <div class="serverFiles">
           <h3>Server Files: </h3>
-          loren ipsum??? more text to be in here soon...tm
+          1) Modify Express server files <br>
+          Replace all instance of <u>require('express')</u> with <u>require('expressivejs')</u>.
+          This will enable Expressive to progressively document the state of client requests and server responses. <br>
+
+          2) Run xpr-init <br>
+          This file should be called <u>expressive.config.js</u> and be located in your application's root directory. <br>
         </div>
-        <div class="text-left">
+        <div class="commandLines">
           <h3>Command Lines: </h3>
-          <span class="commands">$ xpr-test:</span> Test your server routes. Sends http requests to your Express server as specified in your expressive.config.js file. This will create an expressive.json file in which information on request and response states is stored. If the file already exists from previous tests, it will be overwritten. <br>
-          <span class="commands">$ xpr-build:</span> Bundle data from the expressive.json file created using the xpr-test command for use in rendering a visualization of your server routes. <br>
+          <span class="commands">$ xpr-test:</span> Test your server routes. This will create an expressive.json file. <br>
+          <span class="commands">$ xpr-build:</span> Bundle data from the expressive.json file created for the visualization. <br>
           <span class="commands">$ xpr-display:</span> Render a visualization of your server routes based on the data bundled from the xpr-test command. <br>
-          <span class="commands">$ xpr:</span> Test your server routes, then bundle the collected data, and then render a visualization. Equivalent to running xpr-test followed by xpr-build followed by xpr-display.
+          <span class="commands">$ xpr:</span> Equivalent to running xpr-test followed by xpr-build followed by xpr-display.
         </div>
         <button id='quickstartArrow' aria-label="next tab">
           <span class="downButton"><img src="./images/arrow-down.png"></span>
@@ -81,10 +87,26 @@ Sed mollis ultricies leo rutrum mollis. Pellentesque habitant morbi tristique se
       <article id="contact" class="content">
         Meet The Team Behind ExpressiveJS!
         <div class="teamGram">
-          <div class="members">Glenn Alexander</div>
-          <div class="members">Ryan Fowlkes Smith</div>
-          <div class="members">Kangseon Cho</div>
-          <div class="members">Mary Snow</div>
+          <div class="members">
+            <img src="./images/bioPictures/glenn.png"> <br>
+            Glenn Alexander <br>
+            <p>Software Engineer</p>
+          </div>
+          <div class="members">
+            <img src="./images/bioPictures/ryan.png"> <br>
+            Ryan Fowlkes Smith <br>
+            <p>Software Engineer</p>
+          </div>
+          <div class="members">
+            <img src="./images/bioPictures/kangseon.png"> <br>
+            Kangseon Cho <br>
+            <p>Software Engineer</p>
+          </div>
+          <div class="members">
+            <img src="./images/bioPictures/mary.png"> <br>
+            Mary Snow <br>
+            <p>Software Engineer</p>
+          </div>
         </div>
       </article>
     </section>

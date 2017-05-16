@@ -3,6 +3,7 @@ body{
   margin: 0;
   background-color: #383838;
   color: white;
+  font-family: "Lucida Grande";
 }
 #wrapper {
   display: flex;
@@ -26,6 +27,14 @@ body{
   color: white;
   width: 100%;
 }
+#mainlogo {
+  width: 80%;
+  height: auto;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+
 
 #sidebar-wrapper {
   background-color: #2B2D33;
@@ -38,29 +47,10 @@ body{
   padding-left: 20vw;
   width: 80vw;
 }
-#homeParagraph {
-  /*give spacing around the wall of texts in home div*/
-  padding: 2%;
-}
-
-#mainlogo {
-  width: 80%;
-  height: 15%;
-  padding-top: 10%;
-  padding-left: 10%;
-  padding-bottom: 10%;
-}
 
 .content {
   height: 100vh;
   width: 80vw;
-}
-
-#sampleImageDiv {
-  /*change vertical positioning of the sample picture*/
-  padding-top: 5%;
-  /*change horizontal positioning of the sample picture*/
-  padding-left: 20%;
 }
 
 .commands {
@@ -70,7 +60,13 @@ body{
 button {
   background-color: transparent;
   border: none;
+  outline: none;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
 .downButton img{
   height: 90px;
   width: 90px;
@@ -79,6 +75,7 @@ button {
 /*needed to move buttons to bottom*/
 #quickstart, #sample, #home {
   position: relative;
+  text-align: center;
 }
 #quickstartArrow, #sampleArrow, #homeArrow  {
   position: absolute;
@@ -86,10 +83,68 @@ button {
   right: 45%;
 }
 
+/*home*/
+.title {
+  padding-top: 20vh;
+  font-size: 80px;
+  text-align: center;
+  color: #ff8d23;
+}
+#js {
+  color: #696291
+}
+#homeParagraph {
+  /*give spacing around the wall of texts in home div*/
+  padding-left: 9%;
+  padding-right: 9%;
+  /*vertically adjust the location of the paragraph*/
+  padding-top: 15vh;
+  font-size: 24px;
+}
+
+/*sample image*/
+#sampleImageDiv {
+  /*change vertical positioning of the sample picture*/
+  padding-top: 5%;
+  /*change horizontal positioning of the sample picture*/
+  padding-left: 20%;
+}
+
+
+/*Quickstart*/
+#quickstart h1{
+  /*padding-top: 7vh;*/
+  text-align: center;
+  font-size: 40px;
+}
+.install a{
+  color: white;
+}
+.install, .serverFiles, .commandLines {
+  /*padding-top: 3vh;*/
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+
 /*contact*/
+#contact {
+  padding-top: 10vh;
+  font-size: 26px;
+  text-align: center;
+}
 .teamGram {
   display: flex;
 }
 .members {
-  padding-left: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 20px;
+}
+.members p {
+  font-size: 16px;
+}
+.members img {
+  width: 75%;
+  height: 60%;
 }
