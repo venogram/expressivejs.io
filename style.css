@@ -7,7 +7,6 @@ body{
 }
 .nav-side-menu {
   overflow: auto;
-  font-size: 12px;
   font-weight: 200;
   background-color: #2B2D33;
   position: fixed;
@@ -71,7 +70,6 @@ body{
 }
 .nav-side-menu ul .sub-menu li:before,
 .nav-side-menu li .sub-menu li:before {
-  font-family: FontAwesome;
   content: "\f105";
   display: inline-block;
   padding-left: 10px;
@@ -142,7 +140,7 @@ body{
 
 #home, #sample, #quickstart, #contact {
   margin-bottom: 10%;
-  height: 100vh;
+  height: auto;
 }
 
 .glyphicon {
@@ -150,12 +148,15 @@ body{
 }
 
   #mainLogo {
+    /*margin-top: 15%;
+    margin-bottom: 15%;*/
     width: 250px;
     height: auto;
+    text-align: center;
   }
 
 /*down buttons*/
-#quickstart, #sample, #home {
+/*#quickstart, #sample, #home {
   position: relative;
   text-align: center;
 }
@@ -163,7 +164,7 @@ body{
   position: absolute;
   bottom: 1%;
   right: 45%;
-}
+}*/
 button {
   background-color: transparent;
   border: none;
@@ -175,4 +176,16 @@ button:hover {
 .downButton img{
   height: 90px;
   width: 90px;
+}
+
+#sampleImage {
+  width:100%;
+}
+
+#homeButton, #sampleButton, #quickstartButton, #contactButton {
+  text-align: center;
+  padding-right: 10%;
+  font-size: 22px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
