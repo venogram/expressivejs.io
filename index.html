@@ -6,18 +6,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Expressive is a developer tool that tracks and visualizes server routes in Express applications.
-  Useful for debugging and teaching alike, Expressive enables developers to send client requests to their Express server, and then render a dynamic and comprehensive visualization of server state throughout the lifespan of each request -- all from the command line." />
+  Useful for debugging and teaching alike, Expressive enables developers to send client requests to their Express server, and then render a dynamic and comprehensive visualization of server state throughout the lifespan of each request -- all from the command line."
+  />
 
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-99328864-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-99328864-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -28,110 +30,151 @@
 </head>
 
 <body>
-  <div id="wrapper">
+  <div id="wrapper" class="container-fluid">
+    <div class="nav-side-menu">
+      <!--sidebar-->
+      <aside id="sidebar-wrapper " class="col-md-3">
+        <ul class="nav">
+          <img id='mainlogo' src="./images/xpr-logo/whiteEXPRLogo@2x.png">
+          <li id="homeButton">
+            <a href="#home">Home</a>
+          </li>
+          <li id="sampleButton">
+            <a href="#sample">Sample</a>
+          </li>
+          <li id="quickstartButton">
+            <a href="#quickstart">Quickstart</a>
+          </li>
+          <li id="contactButton">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </aside>
 
-    <!--sidebar-->
-    <aside id="sidebar-wrapper">
-      <img id='mainlogo' src="./images/xpr-logo/whiteEXPRLogo@2x.png">
-      <ul class="sidebar">
-        <li id="homeButton">
-          <a href="#home">Home</a>
-        </li>
-        <li id="sampleButton">
-          <a href="#sample">Sample</a>
-        </li>
-        <li id="quickstartButton">
-          <a href="#quickstart">Quickstart</a>
-        </li>
-        <li id="contactButton">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </aside>
-
-    <!--content-->
-    <section id="page-wrapper">
-      <article id="home" class="content">
-        <div class="title"><i>Expressive<span id="js">JS</span></i></div>
-        <div id="homeParagraph">
-          Expressive is a developer tool that tracks and visualizes server routes in Express applications.
-          Useful for debugging and teaching alike, Expressive enables developers to send client requests to their Express server, and then render a dynamic and comprehensive visualization of server state throughout the lifespan of each request <b>-- all from the command line</b>.
+      <!--content-->
+      <section id="page-wrapper" class="col-md-9">
+        <div id="home" class="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa est, commodo sit amet cursus ac, posuere in massa. In
+          eu diam eget augue malesuada vulputate. Praesent posuere venenatis libero id facilisis. Mauris bibendum lectus
+          ac aliquam fermentum. Maecenas accumsan nibh massa. Donec suscipit laoreet gravida. Phasellus hendrerit nisl eu
+          diam ultrices bibendum. Duis dapibus leo velit, sed mollis massa dictum a. Donec malesuada scelerisque justo, eu
+          posuere nibh lacinia sit amet. Phasellus iaculis tortor non eros congue, sed tempor tellus facilisis. Maecenas
+          accumsan arcu quis pellentesque cursus. Maecenas at quam at libero varius molestie. Maecenas ultrices enim ut euismod
+          cursus. Praesent molestie auctor congue. Sed porttitor lorem ut dui vestibulum vestibulum. Sed placerat gravida
+          nulla vitae ultricies. Nam efficitur sodales sapien vitae aliquam. Curabitur ex tellus, faucibus in quam a, interdum
+          laoreet massa. Praesent ornare massa purus, ut porttitor libero egestas ut. Aenean maximus a turpis nec auctor.
+          Vestibulum malesuada molestie nunc, quis varius dolor pretium quis. Vivamus aliquam lorem sed enim aliquam, mattis
+          porta lectus interdum. Sed ante libero, rhoncus id nisl sed, blandit molestie turpis. Curabitur congue ornare lacinia.
+          Donec justo elit, laoreet et lectus eget, tincidunt tincidunt urna. Pellentesque in lacus mi. Morbi commodo est
+          a ultrices posuere. Morbi libero metus, vehicula molestie magna pellentesque, molestie auctor massa. Vestibulum
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sapien nisl, vulputate vel
+          dignissim sit amet, auctor ac est. Nunc quis turpis et ante venenatis suscipit vel placerat lacus. Mauris eu leo
+          massa. Aenean mollis sapien et lacinia faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Phasellus neque nibh, ultricies id commodo vel, imperdiet nec lacus. Curabitur elit purus,
+          ultrices eget lacus id, scelerisque vehicula lorem. In hendrerit eleifend eros eu consequat. Quisque vestibulum
+          metus mattis urna pellentesque, quis porttitor velit ultrices. Integer tristique enim ipsum, et tempus neque feugiat
+          in. Cras iaculis, mauris nec pretium egestas, ex lectus luctus tellus, ut faucibus nibh ex et nulla. Sed diam sapien,
+          ornare auctor mi id, ornare pellentesque justo. Quisque euismod lacinia diam, quis tincidunt neque sagittis vitae.
+          In volutpat erat ultricies nibh blandit, vel porttitor est vestibulum. Nunc venenatis sagittis nunc id laoreet.
+          Aenean a metus ut ante pulvinar tincidunt. Suspendisse ut neque in leo vestibulum faucibus. Suspendisse pellentesque
+          eget quam in ornare. Quisque in bibendum odio. Sed nec accumsan nunc. Aenean scelerisque lobortis arcu, non gravida
+          lacus ultricies eget. Curabitur et urna in mi viverra congue. Nunc vel posuere nibh. Donec bibendum iaculis massa,
+          in porttitor purus sodales quis. Etiam non nisl auctor libero volutpat aliquet. Ut aliquam lobortis risus non auctor.
+          Aenean id sodales ante, id convallis lacus. Vivamus tempor malesuada augue. Aenean dapibus odio ut est luctus rutrum
+          vel non neque.
         </div>
-        <button id='homeArrow' aria-label="next tab">
-          <span class="downButton"><img src="./images/arrow/arrow-down.png" alt="Down Arrow"></span>
-        </button>
-      </article>
-
-      <article id="sample" class="content">
-        <div id="sampleImageDiv">
-        <span id="sampleHeader">Track your server routes at every step!</span>
-        <img id="sampleImage" src="./images/sample-gui/expressive-sample.png" alt="Expressive GUI Sample">
+        <div id="sample" class="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa est, commodo sit amet cursus ac, posuere in massa. In
+          eu diam eget augue malesuada vulputate. Praesent posuere venenatis libero id facilisis. Mauris bibendum lectus
+          ac aliquam fermentum. Maecenas accumsan nibh massa. Donec suscipit laoreet gravida. Phasellus hendrerit nisl eu
+          diam ultrices bibendum. Duis dapibus leo velit, sed mollis massa dictum a. Donec malesuada scelerisque justo, eu
+          posuere nibh lacinia sit amet. Phasellus iaculis tortor non eros congue, sed tempor tellus facilisis. Maecenas
+          accumsan arcu quis pellentesque cursus. Maecenas at quam at libero varius molestie. Maecenas ultrices enim ut euismod
+          cursus. Praesent molestie auctor congue. Sed porttitor lorem ut dui vestibulum vestibulum. Sed placerat gravida
+          nulla vitae ultricies. Nam efficitur sodales sapien vitae aliquam. Curabitur ex tellus, faucibus in quam a, interdum
+          laoreet massa. Praesent ornare massa purus, ut porttitor libero egestas ut. Aenean maximus a turpis nec auctor.
+          Vestibulum malesuada molestie nunc, quis varius dolor pretium quis. Vivamus aliquam lorem sed enim aliquam, mattis
+          porta lectus interdum. Sed ante libero, rhoncus id nisl sed, blandit molestie turpis. Curabitur congue ornare lacinia.
+          Donec justo elit, laoreet et lectus eget, tincidunt tincidunt urna. Pellentesque in lacus mi. Morbi commodo est
+          a ultrices posuere. Morbi libero metus, vehicula molestie magna pellentesque, molestie auctor massa. Vestibulum
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sapien nisl, vulputate vel
+          dignissim sit amet, auctor ac est. Nunc quis turpis et ante venenatis suscipit vel placerat lacus. Mauris eu leo
+          massa. Aenean mollis sapien et lacinia faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Phasellus neque nibh, ultricies id commodo vel, imperdiet nec lacus. Curabitur elit purus,
+          ultrices eget lacus id, scelerisque vehicula lorem. In hendrerit eleifend eros eu consequat. Quisque vestibulum
+          metus mattis urna pellentesque, quis porttitor velit ultrices. Integer tristique enim ipsum, et tempus neque feugiat
+          in. Cras iaculis, mauris nec pretium egestas, ex lectus luctus tellus, ut faucibus nibh ex et nulla. Sed diam sapien,
+          ornare auctor mi id, ornare pellentesque justo. Quisque euismod lacinia diam, quis tincidunt neque sagittis vitae.
+          In volutpat erat ultricies nibh blandit, vel porttitor est vestibulum. Nunc venenatis sagittis nunc id laoreet.
+          Aenean a metus ut ante pulvinar tincidunt. Suspendisse ut neque in leo vestibulum faucibus. Suspendisse pellentesque
+          eget quam in ornare. Quisque in bibendum odio. Sed nec accumsan nunc. Aenean scelerisque lobortis arcu, non gravida
+          lacus ultricies eget. Curabitur et urna in mi viverra congue. Nunc vel posuere nibh. Donec bibendum iaculis massa,
+          in porttitor purus sodales quis. Etiam non nisl auctor libero volutpat aliquet. Ut aliquam lobortis risus non auctor.
+          Aenean id sodales ante, id convallis lacus. Vivamus tempor malesuada augue. Aenean dapibus odio ut est luctus rutrum
+          vel non neque.
         </div>
-        <button id='sampleArrow' aria-label="next tab">
-          <span class="downButton"><img src="./images/arrow/arrow-down.png" alt="Down Arrow"></span>
-        </button>
-      </article>
-
-      <article id="quickstart" class="content">
-        <h1>Quick Start</h1>
-        <div class="install">
-          <h3>Install: </h3>
-          $ npm install expressivejs --save-dev <br>
-          <a href="https://www.npmjs.com/package/expressivejs">NPM website</a> <br>
-          <a href="https://github.com/venogram/ExpressiveJS">Github</a>
+        <div id="quickstart" class="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa est, commodo sit amet cursus ac, posuere in massa. In
+          eu diam eget augue malesuada vulputate. Praesent posuere venenatis libero id facilisis. Mauris bibendum lectus
+          ac aliquam fermentum. Maecenas accumsan nibh massa. Donec suscipit laoreet gravida. Phasellus hendrerit nisl eu
+          diam ultrices bibendum. Duis dapibus leo velit, sed mollis massa dictum a. Donec malesuada scelerisque justo, eu
+          posuere nibh lacinia sit amet. Phasellus iaculis tortor non eros congue, sed tempor tellus facilisis. Maecenas
+          accumsan arcu quis pellentesque cursus. Maecenas at quam at libero varius molestie. Maecenas ultrices enim ut euismod
+          cursus. Praesent molestie auctor congue. Sed porttitor lorem ut dui vestibulum vestibulum. Sed placerat gravida
+          nulla vitae ultricies. Nam efficitur sodales sapien vitae aliquam. Curabitur ex tellus, faucibus in quam a, interdum
+          laoreet massa. Praesent ornare massa purus, ut porttitor libero egestas ut. Aenean maximus a turpis nec auctor.
+          Vestibulum malesuada molestie nunc, quis varius dolor pretium quis. Vivamus aliquam lorem sed enim aliquam, mattis
+          porta lectus interdum. Sed ante libero, rhoncus id nisl sed, blandit molestie turpis. Curabitur congue ornare lacinia.
+          Donec justo elit, laoreet et lectus eget, tincidunt tincidunt urna. Pellentesque in lacus mi. Morbi commodo est
+          a ultrices posuere. Morbi libero metus, vehicula molestie magna pellentesque, molestie auctor massa. Vestibulum
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sapien nisl, vulputate vel
+          dignissim sit amet, auctor ac est. Nunc quis turpis et ante venenatis suscipit vel placerat lacus. Mauris eu leo
+          massa. Aenean mollis sapien et lacinia faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Phasellus neque nibh, ultricies id commodo vel, imperdiet nec lacus. Curabitur elit purus,
+          ultrices eget lacus id, scelerisque vehicula lorem. In hendrerit eleifend eros eu consequat. Quisque vestibulum
+          metus mattis urna pellentesque, quis porttitor velit ultrices. Integer tristique enim ipsum, et tempus neque feugiat
+          in. Cras iaculis, mauris nec pretium egestas, ex lectus luctus tellus, ut faucibus nibh ex et nulla. Sed diam sapien,
+          ornare auctor mi id, ornare pellentesque justo. Quisque euismod lacinia diam, quis tincidunt neque sagittis vitae.
+          In volutpat erat ultricies nibh blandit, vel porttitor est vestibulum. Nunc venenatis sagittis nunc id laoreet.
+          Aenean a metus ut ante pulvinar tincidunt. Suspendisse ut neque in leo vestibulum faucibus. Suspendisse pellentesque
+          eget quam in ornare. Quisque in bibendum odio. Sed nec accumsan nunc. Aenean scelerisque lobortis arcu, non gravida
+          lacus ultricies eget. Curabitur et urna in mi viverra congue. Nunc vel posuere nibh. Donec bibendum iaculis massa,
+          in porttitor purus sodales quis. Etiam non nisl auctor libero volutpat aliquet. Ut aliquam lobortis risus non auctor.
+          Aenean id sodales ante, id convallis lacus. Vivamus tempor malesuada augue. Aenean dapibus odio ut est luctus rutrum
+          vel non neque.
         </div>
-        <div class="serverFiles">
-          <h3>Server Files: </h3>
-          1) Modify Express server files <br>
-          Replace all instance of <u>require('express')</u> with <u>require('expressivejs')</u>.
-          This will enable Expressive to progressively document the state of client requests and server responses. <br>
-
-          2) Run xpr-init <br>
-          This file should be called <u>expressive.config.js</u> and be located in your application's root directory. <br>
+        <div id="contact" class="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa est, commodo sit amet cursus ac, posuere in massa. In
+          eu diam eget augue malesuada vulputate. Praesent posuere venenatis libero id facilisis. Mauris bibendum lectus
+          ac aliquam fermentum. Maecenas accumsan nibh massa. Donec suscipit laoreet gravida. Phasellus hendrerit nisl eu
+          diam ultrices bibendum. Duis dapibus leo velit, sed mollis massa dictum a. Donec malesuada scelerisque justo, eu
+          posuere nibh lacinia sit amet. Phasellus iaculis tortor non eros congue, sed tempor tellus facilisis. Maecenas
+          accumsan arcu quis pellentesque cursus. Maecenas at quam at libero varius molestie. Maecenas ultrices enim ut euismod
+          cursus. Praesent molestie auctor congue. Sed porttitor lorem ut dui vestibulum vestibulum. Sed placerat gravida
+          nulla vitae ultricies. Nam efficitur sodales sapien vitae aliquam. Curabitur ex tellus, faucibus in quam a, interdum
+          laoreet massa. Praesent ornare massa purus, ut porttitor libero egestas ut. Aenean maximus a turpis nec auctor.
+          Vestibulum malesuada molestie nunc, quis varius dolor pretium quis. Vivamus aliquam lorem sed enim aliquam, mattis
+          porta lectus interdum. Sed ante libero, rhoncus id nisl sed, blandit molestie turpis. Curabitur congue ornare lacinia.
+          Donec justo elit, laoreet et lectus eget, tincidunt tincidunt urna. Pellentesque in lacus mi. Morbi commodo est
+          a ultrices posuere. Morbi libero metus, vehicula molestie magna pellentesque, molestie auctor massa. Vestibulum
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sapien nisl, vulputate vel
+          dignissim sit amet, auctor ac est. Nunc quis turpis et ante venenatis suscipit vel placerat lacus. Mauris eu leo
+          massa. Aenean mollis sapien et lacinia faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Phasellus neque nibh, ultricies id commodo vel, imperdiet nec lacus. Curabitur elit purus,
+          ultrices eget lacus id, scelerisque vehicula lorem. In hendrerit eleifend eros eu consequat. Quisque vestibulum
+          metus mattis urna pellentesque, quis porttitor velit ultrices. Integer tristique enim ipsum, et tempus neque feugiat
+          in. Cras iaculis, mauris nec pretium egestas, ex lectus luctus tellus, ut faucibus nibh ex et nulla. Sed diam sapien,
+          ornare auctor mi id, ornare pellentesque justo. Quisque euismod lacinia diam, quis tincidunt neque sagittis vitae.
+          In volutpat erat ultricies nibh blandit, vel porttitor est vestibulum. Nunc venenatis sagittis nunc id laoreet.
+          Aenean a metus ut ante pulvinar tincidunt. Suspendisse ut neque in leo vestibulum faucibus. Suspendisse pellentesque
+          eget quam in ornare. Quisque in bibendum odio. Sed nec accumsan nunc. Aenean scelerisque lobortis arcu, non gravida
+          lacus ultricies eget. Curabitur et urna in mi viverra congue. Nunc vel posuere nibh. Donec bibendum iaculis massa,
+          in porttitor purus sodales quis. Etiam non nisl auctor libero volutpat aliquet. Ut aliquam lobortis risus non auctor.
+          Aenean id sodales ante, id convallis lacus. Vivamus tempor malesuada augue. Aenean dapibus odio ut est luctus rutrum
+          vel non neque.
         </div>
-        <div class="commandLines">
-          <h3>Command Lines: </h3>
-          <span class="commands">$ xpr-test:</span> Test your server routes. This will create an expressive.json file. <br>
-          <span class="commands">$ xpr-build:</span> Bundle data from the expressive.json file created for the visualization. <br>
-          <span class="commands">$ xpr-display:</span> Render a visualization of your server routes based on the data bundled from the xpr-test command. <br>
-          <span class="commands">$ xpr:</span> Equivalent to running xpr-test followed by xpr-build followed by xpr-display.
-        </div>
-        <button id='quickstartArrow' aria-label="next tab">
-          <span class="downButton"><img src="./images/arrow/arrow-down.png" alt="Down Arrow"></span>
-        </button>
-      </article>
-
-      <article id="contact" class="content">
-        <span>Meet The Team Behind ExpressiveJS!</span>
-        <div class="teamGram">
-          <div class="members">
-            <img src="./images/bioPictures/glenn.png" alt="Glenn Alexander"> <br>
-            Glenn Alexander <br>
-            <p>Software Engineer</p> <br>
-            <a href="https://github.com/gcz23">GitHub</a>
-          </div>
-          <div class="members">
-            <img src="./images/bioPictures/ryan.png" alt="Ryan Fowlkes Smith"> <br>
-            Ryan Fowlkes <br>
-            <p>Software Engineer</p> <br>
-            <a href="https://github.com/ryanfowlkes">GitHub</a>
-          </div>
-          <div class="members">
-            <img src="./images/bioPictures/kangseon.png" alt="Kangseon Cho"> <br>
-            Kangseon Cho <br>
-            <p>Software Engineer</p> <br>
-            <a href="https://github.com/littletoy">GitHub</a>
-          </div>
-          <div class="members">
-            <img src="./images/bioPictures/mary.png" alt="Mary Snow"> <br>
-            Mary Snow <br>
-            <p>Software Engineer</p> <br>
-            <a href="https://github.com/Mary-Snow">GitHub</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
+      </section>
+    </div>
   </div>
 </body>
 <script src="./main.js"></script>
