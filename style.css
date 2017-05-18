@@ -138,8 +138,14 @@ body{
     padding-top: 1%;
     padding-bottom: 1%;
   }
+  .members {
+    text-align: center;
+  }
   .members img {
     width: 30%;
+  }
+  #home, #sample, #quickstart, #contact {
+    height: 100%;
   }
 }
 @media (min-width: 767px) {
@@ -168,6 +174,12 @@ body{
   }
   .members img {
       width: 75%;
+  }
+  #home, #sample, #quickstart, #contact {
+    height: 100vh;
+  }
+  .downButtonDiv {
+    text-align: center;
   }
 }
 
