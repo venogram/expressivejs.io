@@ -27,3 +27,22 @@ for (let i = 0; i < arrows.length; i += 1) {
     }, 1000);
   });
 }
+
+//bigger sample image on different browser tab
+$("#sampleImage").on("click", function() {
+    window.open($("#sampleImage").attr("src"), "_blank", "menubar=1,resizable=1");
+});
+
+
+//adjust height to fit screen, even while adjusting
+$(document).ready(function() {
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('#page-wrapper').css('min-height', windowHeight);
+  };
+  setHeight();
+
+  $(window).resize(function() {
+    setHeight();
+  });
+});
