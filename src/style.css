@@ -99,6 +99,8 @@ body{
   -ms-transition: all 1s ease;
   transition: all 1s ease;
 }
+
+/*for sidebar*/
 @media (max-width: 767px) {
   .nav-side-menu {
     position: relative;
@@ -124,29 +126,6 @@ body{
     padding-left: 20px;
     line-height: 50px !important;
   }
-
-
-  #mainLogo {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    height: 75px;
-    margin-left: 40%;
-  }
-  #homeButton, #sampleButton, #quickstartButton, #contactButton {
-    text-align: center;
-    font-size: 16px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-  .members {
-    text-align: center;
-  }
-  .members img {
-    width: 30%;
-  }
-  #home, #sample, #quickstart, #contact {
-    height: 100%;
-  }
 }
 @media (min-width: 767px) {
   .nav-side-menu .menu-list .menu-content {
@@ -157,8 +136,84 @@ body{
   	float: right;
     padding: 5%;
   }
+}
 
 
+/*for contents*/
+/*mobile*/
+@media (max-width: 767px) {
+  #page-wrapper {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  #mainLogo {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 75px;
+    margin-left: 30%;
+  }
+  #homeButton, #sampleButton, #quickstartButton, #contactButton {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  /*home*/
+  .title {
+    font-size: 50px;
+    text-align: center;
+    color: #ff8d23;
+  }
+  #js {
+    color: #696291
+  }
+  #homeParagraph {
+    margin-left: 5%;
+    margin-right: 5%;
+    /*vertically adjust the location of the paragraph*/
+    margin-top: 10%;
+    font-size: 16px;
+  }
+
+  #home, #sample, #quickstart, #contact {
+    height: 100%; /*100vh*/
+  }
+  #sampleImageDiv {
+    text-align: center;
+    font-size: 22px;
+    height: 60%;
+  }
+  #sampleImage {
+    height: 80%;
+  }
+  #sampleHeader {
+    margin-bottom: 11%;
+  }
+  .members {
+    margin-top: 5%;
+    text-align: center;
+
+  }
+  .members img {
+    width: 20%;
+  }
+  #contact span {
+    font-size: 1.2em;
+  }
+  #contact {
+    text-align: center;
+  }
+  #contact span {
+    font-size: 22px;
+  }
+}
+/*desktop*/
+@media (min-width: 767px) {
+  #page-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   #mainLogo {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -167,32 +222,77 @@ body{
   }
   #homeButton, #sampleButton, #quickstartButton, #contactButton {
     text-align: center;
-    padding-right: 10%;
+    margin-right: 10%;
     font-size: 22px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  /*home*/
+  .title {
+    font-size: 80px;
+    text-align: center;
+    color: #ff8d23;
+  }
+  #js {
+    color: #696291
+  }
+  #homeParagraph {
+    font-size: 24px;
+    margin-top: 10%;
+  }
+
+  .members {
+    margin-top: 5%;
+    text-align: center;
   }
   .members img {
-      width: 75%;
+    width: 75%;
   }
-  #home, #sample, #quickstart, #contact {
-    height: 100vh;
+  #home {
+    height: 100%;
   }
-  .downButtonDiv {
+  #sample, #contact {
+    height: 100%; /*100%*/
+    margin-top: 50%;
+  }
+  #quickstart {
+    height: 100%;
+    margin-top: 40%;
+  }
+  #contact {
+    margin-top: 15%;
+  }
+
+  #sample {
     text-align: center;
+    font-size: 40px;
+  }
+  #sampleImage {
+    /*margin-top: 5%;*/
+    height: auto;
+  }
+  #sampleImageDiv {
+    height: 80%;
+  }
+
+   #contact {
+    text-align: center;
+  }
+  #contact span {
+    font-size: 40px;
+  }
+
+  /*customize buttons to go bottom*/
+  #homeDown {
+    padding-top: 25%;
+  }
+  #quickstartDown {
+    padding-top: 10%;
   }
 }
 
-/*down buttons*/
-/*#quickstart, #sample, #home {
-  position: relative;
-  text-align: center;
-}
-#quickstartArrow, #sampleArrow, #homeArrow  {
-  position: absolute;
-  bottom: 1%;
-  right: 45%;
-}*/
+
 button {
   background-color: transparent;
   border: none;
@@ -208,8 +308,21 @@ button:hover {
 
 #sampleImage {
   width:100%;
+  height: 100%;
 }
 
-.members {
-  border: 1px white solid;
+.downButtonDiv {
+  position: relative;
+  text-align: center;
+}
+
+#quickstart {
+  text-align: center;
+}
+.install, .serverFiles, .commandLines {
+  text-align: left;
+}
+.install a {
+  color: white;
+  text-decoration: underline;
 }
