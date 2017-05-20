@@ -261,7 +261,7 @@ body{
     margin-top: 40%;
   }
   #contact {
-    margin-top: 15%;
+    /*margin-top: 15%;*/
   }
 
   #sample {
@@ -273,11 +273,12 @@ body{
     height: auto;
   }
   #sampleImageDiv {
-    height: 80%;
+    height: 550px;
   }
 
    #contact {
     text-align: center;
+    height: 100vh;
   }
   #contact span {
     font-size: 40px;
