@@ -323,7 +323,3 @@ button:hover {
 .install, .serverFiles, .commandLines {
   text-align: left;
 }
-.install a {
-  color: white;
-  text-decoration: underline;
-}
